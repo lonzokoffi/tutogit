@@ -1,5 +1,7 @@
 body
 {
+    margin: 0px;
+    padding: 0px;
     background-color: white;
 }
 nav li{
@@ -7,4 +9,10 @@ nav li{
     display: table;
     float: left;
     margin-left: 5px;
+}
+#pied {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	bottom: 0;
 }
