@@ -2,3 +2,9 @@ body
 {
     background-color: white;
 }
+nav li{
+    list-style-type: none;
+    display: table;
+    float: left;
+    margin-left: 5px;
+}
