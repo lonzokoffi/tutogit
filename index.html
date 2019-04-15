@@ -8,45 +8,38 @@
         <title>Document</title>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+        <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="http://">Formation</a></li>
-                    <li><a href="http://">Contact</a></li>
-                    </ul>
-                </nav>
-                <br>
-                <div>
-                        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        jhdshshshslhljhgjlsgsldhgjhjghsjhgjshjghsjlhglsjhljghdjlhjgdhjhgljshsj
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <section>
-                    <h1>
-                        lonzo et roma
-                    </h1>
-                </section>
+        <div>
+                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                jhdshshshslhljhgjlsgsldhgjhjghsjhgjshjghsjlhglsjhljghdjlhjgdhjhgljshsj
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <section>
+            <h1>
+                lonzo et roma
+            </h1>
+        </section>
 
 
                 
@@ -100,6 +93,61 @@
     <script src="main.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!---owl corousel script link--->
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+
+
+
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+    $(window).on('scroll',function(){
+
+    var scroll=$(window).scrollTop();
+
+    if(scroll<100){
+
+        $("header").removeClass("stacky");
+    }
+    else{
+        $("header").addClass("stacky");
+    }
+
+    });
+
+
+        });
+    </script>
+
 
 
     </body>
